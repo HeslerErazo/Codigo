@@ -12,28 +12,36 @@ int main(int argc, char const *argv[])
    
     while(true){
     cout <<"-----------------------------------------------" << endl;
-    cout <<"-                Menú de Juegos              -" << endl;
+    cout <<"-                Menu de Juegos               -" << endl;
     cout <<"-----------------------------------------------" << endl;
     cout << endl;
     cout << "Ingrese una opcion: " << endl;
     cout << "1 - Startship" << endl;
     cout << "2 - Snake" << endl;
+    cout << "0 - Salir" << endl;
 
     cin >> opcion;
    
-    switch(opcion){
+   	 switch(opcion){
 
-    case 1: starShip();
-    break;
-    case 2: snake();
-    break;
-    default:   
-    break;
+    	case 1: starShip();
+    			
+    	break;
+   		
+		case 2: snake();
+				
+    	break;
+   		
+		default:   
+    	break;
     }
-} if(opcion==0){
-    system("pause");
-}
+    	 system("pause");
+    	 cout << endl;
+		 
+		 if(opcion == 0){
+    		
+        break;
+        }
+    } 
     return 0;
 }
-
-
